@@ -147,6 +147,11 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+%% pandoc insers the \tightlist command into lists with the default template and 
+%% seems to expect it for all latex conversions
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
 
 \begin{document}
 	
